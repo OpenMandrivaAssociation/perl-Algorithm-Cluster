@@ -1,6 +1,6 @@
 %define module	Algorithm-Cluster
 %define name	perl-%{module}
-%define version	1.40
+%define version	1.41
 %define release %mkrel 1
 
 Name:		%{name}
