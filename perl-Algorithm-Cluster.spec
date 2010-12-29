@@ -1,9 +1,9 @@
 %define upstream_name	 Algorithm-Cluster
-%define upstream_version 1.49
+%define upstream_version 1.50
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 2
+Release:	%mkrel 1
 
 Summary:	Perl interface to Michiel Jan Laurens de Hoon's C clustering library
 License:	GPL+ or Artistic
