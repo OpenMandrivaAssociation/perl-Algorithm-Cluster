@@ -1,2 +1,4 @@
+removed_sources:
+  Algorithm-Cluster-1.50.tar.gz: 036de7abda2af0f2a09f915b55662d88a0656b21
 sources:
-  "Algorithm-Cluster-1.50.tar.gz": 036de7abda2af0f2a09f915b55662d88a0656b21
+  Algorithm-Cluster-1.52.tar.gz: fd3ddcac7fd18ac83c6463d6325d4e8138a319aa

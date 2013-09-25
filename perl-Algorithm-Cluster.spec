@@ -1,15 +1,15 @@
 %define upstream_name	 Algorithm-Cluster
-%define upstream_version 1.50
+%define upstream_version 1.52
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Perl interface to Michiel Jan Laurens de Hoon's C clustering library
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Algorithm/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Algorithm/Algorithm-Cluster-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
@@ -141,7 +141,7 @@ rm -rf %{buildroot}
 - better source URL
 - use standard optimisations
 
-* Fri Apr 28 2006 Nicolas Lécureuil <neoclust@mandriva.org> 1.31-2mdk
+* Fri Apr 28 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 1.31-2mdk
 - Fix BuildRequires Using perl Policies
 	- Source URL 
 - use mkrel
@@ -169,4 +169,5 @@ rm -rf %{buildroot}
 
 * Wed Sep 29 2004 Guillaume Rousse <guillomovitch@mandrake.org> 1.27-1mdk 
 - first mdk release
+
 
