@@ -1,15 +1,15 @@
 %define upstream_name	 Algorithm-Cluster
-%define upstream_version 1.52
+%define upstream_version 1.59
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Perl interface to Michiel Jan Laurens de Hoon's C clustering library
 License:	GPL+ or Artistic
 Group:		Development/Perl
-URL:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Algorithm/Algorithm-Cluster-%{upstream_version}.tar.gz
+URL:		https://metacpan.org/dist/Algorithm-Cluster
+Source0:	https://cpan.metacpan.org/authors/id/M/MD/MDEHOON/Algorithm-Cluster-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
