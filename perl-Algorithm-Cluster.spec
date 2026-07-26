@@ -1,15 +1,13 @@
 %define upstream_name	 Algorithm-Cluster
-%define upstream_version 1.59
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.59
+Release:	2
 
 Summary:	Perl interface to Michiel Jan Laurens de Hoon's C clustering library
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		https://metacpan.org/dist/Algorithm-Cluster
-Source0:	https://cpan.metacpan.org/authors/id/M/MD/MDEHOON/Algorithm-Cluster-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MD/MDEHOON/Algorithm-Cluster-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -25,7 +23,7 @@ written by Michael Eisen while at Stanford University. The C clustering library
 was written by Michiel de Hoon.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 perl -pi -e 's|^#!/usr/perl/perl580/bin/perl|#!/usr/bin/perl|' perl/examples/*
 
 %build
@@ -79,9 +77,7 @@ rm -rf %{buildroot}
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.460.0-1mdv2010.0
 + Revision: 402091
-- rebuild using %%perl_convert_version
-
-* Sun Jun 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.46-1mdv2010.0
+- rebuild using %1.59 Sun Jun 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.46-1mdv2010.0
 + Revision: 383471
 - update to new version 1.46
 
